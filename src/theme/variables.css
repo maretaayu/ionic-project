@@ -1,2 +1,7 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+ion-item {
+  --ion-item-background: yellow;
+  --ion-item-color: black;
+}

@@ -12,25 +12,22 @@
       >
 
       <ion-list>
-        <ion-item>
-          <ion-label>
-            <ion-grid>
-              <ion-row>
-                <ion-col size="4">Name</ion-col>
-                <ion-col size="4">Symbol</ion-col>
-                <ion-col size="4">Harga USD</ion-col>
-              </ion-row>
-            </ion-grid>
-          </ion-label>
-        </ion-item>
-
         <ion-item v-for="crypto in cryptoData" :key="crypto.id">
           <ion-label>
             <ion-grid>
               <ion-row>
-                <ion-col size="4">{{ crypto.name }}</ion-col>
-                <ion-col size="4">{{ crypto.symbol }}</ion-col>
-                <ion-col size="4">${{ crypto.price_usd }}</ion-col>
+                <ion-col size="4">
+                  <p>Rank</p>
+                  {{ crypto.rank }}</ion-col
+                >
+                <ion-col size="4">
+                  {{ crypto.name }}<br />
+                  {{ crypto.symbol }}</ion-col
+                >
+                <ion-col size="4">
+                  <p>USD</p>
+                  {{ crypto.price_usd }}</ion-col
+                >
               </ion-row>
             </ion-grid>
           </ion-label>
